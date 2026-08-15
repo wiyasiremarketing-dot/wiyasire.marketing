@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wiyasire Marketing | Content & Social Media Marketing Agency</title>
+<meta name="description" content="Wiyasire Marketing takes your business from a place of unknown to a place of known — content strategy, social media marketing, and campaign copy engineered to turn attention into customers.">
+<meta name="keywords" content="Wiyasire Marketing, content marketing, social media marketing, content strategy agency, brand marketing, marketing agency">
+<link rel="canonical" href="https://wiyasiremarketing.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wiyasire Marketing | From Unknown To Known">
+<meta property="og:description" content="Content and social media marketing engineered to turn attention into customers.">
+<meta property="og:url" content="https://wiyasiremarketing.com/">
+<meta property="og:site_name" content="Wiyasire Marketing">
+<meta property="og:image" content="https://wiyasiremarketing.com/images/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wiyasire Marketing | From Unknown To Known">
+<meta name="twitter:description" content="Content and social media marketing engineered to turn attention into customers.">
+<meta name="twitter:image" content="https://wiyasiremarketing.com/images/og-image.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MarketingAgency",
+  "name": "Wiyasire Marketing",
+  "description": "Content and social media marketing agency. Taking your business from a place of unknown to a place of known.",
+  "url": "https://wiyasiremarketing.com/",
+  "slogan": "Taking your business from a place of unknown to a place of known.",
+  "sameAs": [
+    "https://instagram.com/wiyasiremarketing",
+    "https://twitter.com/wiyasiremarketing"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0F14;
+    --panel:#121821;
+    --panel-hi:#171F2A;
+    --glass:rgba(23,31,42,0.55);
+    --ink:#ECEFF3;
+    --ink-dim:#8B98A6;
+    --amber:#FF8A1E;
+    --cyan:#4FD1C5;
+    --warn:#F2C230;
+    --line:#26303B;
+    --line-soft:#1B242E;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Space Grotesk',sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+  a{color:inherit;}
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{ outline:2px solid var(--amber); outline-offset:3px; }
+  img{ max-width:100%; display:block; }
+  .wrap{max-width:1140px; margin:0 auto; padding:0 32px;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+
+  body::before{
+    content:"";
+    position:fixed; inset:0;
+    background:repeating-linear-gradient(to bottom, rgba(255,255,255,0.018) 0px, rgba(255,255,255,0.018) 1px, transparent 1px, transparent 3px);
+    pointer-events:none; z-index:50; mix-blend-mode:overlay;
+  }
+  .stripe{ height:10px; background:repeating-linear-gradient(-45deg, var(--warn) 0px, var(--warn) 14px, #0B0F14 14px, #0B0F14 28px); }
+
+  /* ambient glow orbs — stage-light feel */
+  .glow-orb{ position:absolute; border-radius:50%; filter:blur(110px); pointer-events:none; z-index:0; }
+  .glow-amber{ width:520px; height:520px; background:var(--amber); opacity:0.18; top:-160px; right:-120px; }
+  .glow-cyan{ width:420px; height:420px; background:var(--cyan); opacity:0.14; top:120px; left:-140px; }
+
+  .console{ position:sticky; top:0; z-index:60; background:rgba(11,15,20,0.85); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+  .console-bar{ display:flex; justify-content:space-between; align-items:center; padding:14px 0; font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-dim); }
+  .on-air{ display:flex; align-items:center; gap:8px; }
+  .tally{ width:9px; height:9px; border-radius:50%; background:var(--amber); box-shadow:0 0 8px var(--amber); animation:pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse{ 0%,100%{ opacity:1; transform:scale(1); } 50%{ opacity:0.45; transform:scale(0.8); } }
+  .console-nav{ display:flex; gap:20px; flex-wrap:wrap; }
+  .console-nav a{ text-decoration:none; color:var(--ink-dim); transition:color .2s; }
+  .console-nav a:hover{ color:var(--amber); }
+  .console-cta{ font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; background:var(--amber); color:#0B0F14; font-weight:700; padding:9px 16px; border-radius:2px; text-decoration:none; white-space:nowrap; }
+
+  /* ===== Hero ===== */
+  .hero{ position:relative; padding:100px 0 60px; }
+  .hero-grid{ display:grid; grid-template-columns:1.15fr 0.85fr; gap:50px; align-items:center; position:relative; z-index:1; }
+  @media (max-width:900px){ .hero-grid{ grid-template-columns:1fr; } }
+  .hero .callsign{ font-size:12px; letter-spacing:0.18em; text-transform:uppercase; color:var(--cyan); margin-bottom:20px; }
+  .hero h1{ font-family:'Archivo Black',sans-serif; font-size:clamp(36px, 6vw, 72px); line-height:1.03; letter-spacing:-0.01em; }
+  .hero h1 .hl{ color:var(--amber); }
+  .hero .tagline{ margin-top:20px; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(17px,2.2vw,22px); color:var(--cyan); }
+  .hero .sub{ margin-top:16px; max-width:520px; font-size:16.5px; color:var(--ink-dim); }
+  .hero .cta-row{ margin-top:34px; display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .hero .microtrust{ margin-top:16px; font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--ink-dim); }
+
+  .btn{ display:inline-block; font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:0.05em; text-transform:uppercase; padding:15px 28px; text-decoration:none; border-radius:2px; border:none; cursor:pointer; transition:transform .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease; }
+  .btn-solid{ background:var(--amber); color:#0B0F14; font-weight:700; box-shadow:0 0 0 rgba(255,138,30,0); }
+  .btn-solid:hover{ transform:translateY(-2px); background:#ffa64d; box-shadow:0 8px 24px rgba(255,138,30,0.35); }
+  .btn-ghost{ border:1px solid var(--line); color:var(--ink-dim); background:transparent; }
+  .btn-ghost:hover{ border-color:var(--cyan); color:var(--cyan); }
+
+  /* image slot component */
+  .img-slot{ position:relative; border-radius:8px; overflow:hidden; border:1px solid var(--line); background:var(--panel); display:flex; align-items:center; justify-content:center; }
+  .img-slot::before{ content:""; position:absolute; inset:0; background:repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 10px, transparent 10px, transparent 20px); }
+  .img-slot .slot-label{ position:relative; z-index:1; text-align:center; padding:20px; }
+  .img-slot .slot-label svg{ width:28px; height:28px; margin:0 auto 10px; opacity:0.5; }
+  .img-slot .slot-label span{ display:block; font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-dim); }
+  .img-slot.hero-slot{ aspect-ratio:4/5; box-shadow:0 30px 60px -20px rgba(0,0,0,0.6); }
+  .img-slot.hero-slot::after{ content:""; position:absolute; inset:0; background:linear-gradient(160deg, rgba(255,138,30,0.10), rgba(79,209,197,0.08)); }
+
+  .ticker-track{ overflow:hidden; border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--panel); margin-top:56px; position:relative; z-index:1; }
+  .ticker-inner{ display:flex; white-space:nowrap; animation:ticker 28s linear infinite; padding:12px 0; }
+  @keyframes ticker{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+  .ticker-inner span{ font-family:'JetBrains Mono',monospace; font-size:12.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-dim); padding:0 26px; border-right:1px solid var(--line); }
+  .ticker-inner span b{ color:var(--amber); }
+
+  /* trust logo strip */
+  .trust-strip{ padding:50px 0; border-bottom:1px solid var(--line); }
+  .trust-label{ text-align:center; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-dim); margin-bottom:26px; }
+  .trust-logos{ display:flex; justify-content:center; align-items:center; gap:44px; flex-wrap:wrap; }
+  .trust-logos .logo-chip{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:15px; color:var(--ink-dim); opacity:0.6; letter-spacing:0.02em; border:1px dashed var(--line); padding:8px 16px; border-radius:4px; }
+
+  /* stat counters */
+  .stats-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:44px; }
+  @media (max-width:700px){ .stats-row{ grid-template-columns:1fr; } }
+  .stat-card{ background:var(--glass); backdrop-filter:blur(6px); border:1px solid var(--line); border-radius:8px; padding:26px; text-align:center; }
+  .stat-card .num{ font-family:'Archivo Black',sans-serif; font-size:40px; color:var(--amber); }
+  .stat-card .lbl{ margin-top:8px; font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-dim); }
+
+  section{ padding:88px 0; position:relative; }
+  .eyebrow{ font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:var(--amber); display:flex; align-items:center; gap:12px; margin-bottom:20px; }
+  .eyebrow::after{ content:""; flex:1; height:1px; background:var(--line); }
+  h2.section-title{ font-family:'Archivo Black',sans-serif; font-size:clamp(28px, 4vw, 46px); letter-spacing:-0.01em; margin-bottom:20px; }
+  .section-lede{ font-size:17px; color:var(--ink-dim); max-width:640px; margin-bottom:40px; }
+
+  /* Problem / Solution */
+  .ps-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  @media (max-width:820px){ .ps-grid{ grid-template-columns:1fr; } }
+  .ps-card{ background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:30px; }
+  .ps-card h3{ font-family:'Space Grotesk',sans-serif; font-size:19px; margin-bottom:16px; display:flex; align-items:center; gap:10px; }
+  .ps-card.problem h3{ color:var(--ink); }
+  .ps-card.solution{ border-color:rgba(255,138,30,0.35); }
+  .ps-card.solution h3{ color:var(--amber); }
+  .ps-list{ list-style:none; display:grid; gap:14px; }
+  .ps-list li{ display:flex; gap:12px; font-size:15px; color:var(--ink-dim); }
+  .ps-list .mark{ flex-shrink:0; width:20px; height:20px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; margin-top:2px; }
+  .problem .mark{ background:rgba(139,152,166,0.15); color:var(--ink-dim); }
+  .solution .mark{ background:rgba(255,138,30,0.18); color:var(--amber); }
+
+  /* About */
+  .about-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:44px; align-items:center; }
+  @media (max-width:820px){ .about-grid{ grid-template-columns:1fr; } }
+  .about-copy p{ font-size:17px; color:var(--ink); margin-bottom:18px; }
+  .about-copy p:last-child{ margin-bottom:0; }
+  .img-slot.about-slot{ aspect-ratio:1/1; }
+
+  /* Services */
+  .panel-list{ list-style:none; display:grid; gap:14px; }
+  .panel-list li{ display:flex; align-items:center; gap:20px; background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:22px 26px; flex-wrap:wrap; transition:border-color .2s ease, transform .2s ease; }
+  .panel-list li:hover{ border-color:var(--cyan); transform:translateX(4px); }
+  .switch{ width:40px; height:22px; border-radius:12px; background:var(--line); position:relative; flex-shrink:0; }
+  .switch::after{ content:""; position:absolute; top:3px; left:3px; width:16px; height:16px; border-radius:50%; background:var(--amber); transform:translateX(16px); box-shadow:0 0 6px rgba(255,138,30,0.6); }
+  .panel-list .p-name{ font-weight:700; font-size:17px; min-width:200px; }
+  .panel-list .p-desc{ color:var(--ink-dim); font-size:14.5px; }
+
+  /* Portfolio */
+  .channels{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:24px; }
+  @media (max-width:640px){ .channels{ grid-template-columns:1fr; } }
+  .channel{ background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:border-color .25s ease, transform .25s ease, box-shadow .25s ease; }
+  .channel:hover{ border-color:var(--amber); transform:translateY(-6px); box-shadow:0 20px 40px -18px rgba(0,0,0,0.6); }
+  .img-slot.channel-slot{ aspect-ratio:4/3; border:none; border-bottom:1px solid var(--line); border-radius:0; overflow:hidden; }
+  .img-slot.channel-slot img, .img-slot.channel-slot .slot-label{ transition:transform .4s ease; }
+  .channel:hover .img-slot.channel-slot img{ transform:scale(1.06); }
+  .channel-body{ padding:24px; }
+  .channel .ch-num{ font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--ink-dim); letter-spacing:0.08em; }
+  .channel h3{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; margin:10px 0 10px; }
+  .channel p{ color:var(--ink-dim); font-size:14.5px; margin-bottom:18px; }
+  .signal{ display:flex; align-items:flex-end; gap:3px; height:26px; margin-bottom:8px; }
+  .signal i{ display:block; width:5px; background:var(--cyan); border-radius:1px; opacity:0.85; }
+  .signal-label{ font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--ink-dim); }
+  .note-box{ margin-top:26px; font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--ink-dim); background:var(--panel); border:1px dashed var(--line); border-radius:4px; padding:14px 18px; }
+
+  /* Books */
+  .books{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .book{ background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:hidden; display:flex; flex-direction:column; transition:transform .25s ease, border-color .25s ease; }
+  .book:hover{ transform:translateY(-4px); border-color:var(--cyan); }
+  .img-slot.book-slot{ aspect-ratio:3/4; border:none; border-bottom:1px solid var(--line); border-radius:0; }
+  .book-info{ padding:20px; flex:1; display:flex; flex-direction:column; }
+  .book-info h3{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:18px; margin-bottom:8px; }
+  .book-info p{ color:var(--ink-dim); font-size:14px; flex:1; margin-bottom:14px; }
+  .book-status{ font-family:'JetBrains Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:var(--amber); }
+
+  /* Testimonials */
+  .calls{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media (max-width:900px){ .calls{ grid-template-columns:1fr; } }
+  .call{ background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:26px; }
+  .call .stars{ color:var(--amber); font-size:14px; letter-spacing:2px; margin-bottom:14px; }
+  .call p.msg{ font-size:15.5px; color:var(--ink); margin-bottom:18px; }
+  .call-who{ display:flex; align-items:center; gap:12px; }
+  .avatar{ width:38px; height:38px; border-radius:50%; background:var(--panel-hi); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--cyan); flex-shrink:0; }
+  .call cite{ font-style:normal; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:13.5px; display:block; }
+  .call .role{ font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.05em; }
+
+  /* FAQ */
+  .faq{ display:grid; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  .faq-item{ background:var(--panel); }
+  .faq-q{ width:100%; text-align:left; background:none; border:none; color:var(--ink); font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:16px; padding:22px 26px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+  .faq-q .plus{ font-family:'JetBrains Mono',monospace; color:var(--amber); font-size:18px; flex-shrink:0; transition:transform .25s ease; }
+  .faq-item.open .faq-q .plus{ transform:rotate(45deg); }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
+  .faq-a p{ padding:0 26px 22px; color:var(--ink-dim); font-size:14.5px; max-width:640px; }
+
+  /* Final CTA */
+  .final-cta{ text-align:center; background:linear-gradient(160deg, rgba(255,138,30,0.08), rgba(79,209,197,0.06)); border:1px solid var(--line); border-radius:16px; padding:64px 32px; }
+  .final-cta h2{ font-family:'Archivo Black',sans-serif; font-size:clamp(28px,4.5vw,48px); max-width:680px; margin:0 auto 18px; line-height:1.1; }
+  .final-cta h2 .hl{ color:var(--amber); }
+  .final-cta .sub{ color:var(--ink-dim); max-width:480px; margin:0 auto 30px; }
+
+  /* Contact */
+  .contact-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; }
+  @media (max-width:820px){ .contact-grid{ grid-template-columns:1fr; } }
+  .contact-form{ display:grid; gap:16px; }
+  .field label{ display:block; font-family:'JetBrains Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-dim); margin-bottom:8px; }
+  .field input, .field textarea{ width:100%; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:13px 14px; color:var(--ink); font-family:'Space Grotesk',sans-serif; font-size:15px; }
+  .field input:focus, .field textarea:focus{ border-color:var(--amber); }
+  .field textarea{ min-height:130px; resize:vertical; }
+  .contact-side{ background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:28px; }
+  .contact-side .k{ font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--cyan); text-transform:uppercase; letter-spacing:0.08em; display:block; margin-bottom:6px; }
+  .contact-side .item{ margin-bottom:22px; }
+  .contact-side .item:last-child{ margin-bottom:0; }
+  .contact-side a{ text-decoration:none; }
+  .contact-side a:hover{ color:var(--amber); }
+
+  /* Sticky book-call button */
+  .sticky-cta{ position:fixed; bottom:24px; right:24px; z-index:70; opacity:0; transform:translateY(16px); pointer-events:none; transition:opacity .3s ease, transform .3s ease; }
+  .sticky-cta.show{ opacity:1; transform:translateY(0); pointer-events:auto; }
+  .sticky-cta a{ display:flex; align-items:center; gap:8px; background:var(--amber); color:#0B0F14; font-family:'JetBrains Mono',monospace; font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; padding:14px 20px; border-radius:30px; text-decoration:none; box-shadow:0 12px 28px -6px rgba(255,138,30,0.5); }
+  .sticky-cta .tally{ background:#0B0F14; box-shadow:none; }
+
+  footer{ padding:34px 0 50px; text-align:center; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.06em; color:var(--ink-dim); border-top:1px solid var(--line); }
+
+  .fade-in{ opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease; }
+  .fade-in.visible{ opacity:1; transform:translateY(0); }
+</style>
+</head>
+<body>
+
+<header class="console">
+  <div class="wrap console-bar">
+    <div class="on-air"><span class="tally" aria-hidden="true"></span><span>On Air</span></div>
+    <nav class="console-nav" aria-label="Section navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#books">Books</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="console-cta" href="#contact">Book A Call</a>
+  </div>
+</header>
+
+<div class="stripe" aria-hidden="true"></div>
+
+<main>
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="glow-orb glow-amber" aria-hidden="true"></div>
+    <div class="glow-orb glow-cyan" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="callsign mono">WIYASIRE MARKETING</p>
+        <h1>FROM <span class="hl">UNKNOWN</span><br>TO KNOWN.</h1>
+        <p class="tagline">Taking your business from a place of unknown to a place of known.</p>
+        <p class="sub">You built something worth talking about. Wiyasire Marketing makes sure people actually talk about it — content and social strategy engineered to turn scrollers into customers.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#contact">Book A Free Strategy Call</a>
+          <a class="btn btn-ghost" href="#portfolio">See The Work</a>
+        </div>
+        <p class="microtrust">No fluff. No jargon. Just brands people remember.</p>
+      </div>
+
+      <!-- IMAGE START — replace this whole block with: <img src="images/hero.jpg" alt="Wiyasire Marketing at work"> -->
+      <div class="img-slot hero-slot">
+        <div class="slot-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>
+          <span>Add hero photo<br>images/hero.jpg</span>
+        </div>
+      </div>
+      <!-- IMAGE END -->
+    </div>
+
+    <div class="ticker-track" aria-hidden="true">
+      <div class="ticker-inner">
+        <span>CONTENT STRATEGY</span>
+        <span><b>&bull;</b> SOCIAL MEDIA MARKETING</span>
+        <span>CAMPAIGN COPY</span>
+        <span><b>&bull;</b> BRAND VOICE</span>
+        <span>CONTENT STRATEGY</span>
+        <span><b>&bull;</b> SOCIAL MEDIA MARKETING</span>
+        <span>CAMPAIGN COPY</span>
+        <span><b>&bull;</b> BRAND VOICE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRUST STRIP ================= -->
+  <section class="trust-strip wrap fade-in" style="padding:50px 32px;">
+    <p class="trust-label">Brands that have gone from unknown to known</p>
+    <div class="trust-logos">
+      <!-- LOGO START — replace each chip with <img src="images/client-1.png" alt="Client name" style="height:28px;opacity:.6"> -->
+      <span class="logo-chip">Client Logo</span>
+      <span class="logo-chip">Client Logo</span>
+      <span class="logo-chip">Client Logo</span>
+      <span class="logo-chip">Client Logo</span>
+      <!-- LOGO END -->
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="num" data-count="3">0</div><div class="lbl">Avg. Engagement Lift</div></div>
+      <div class="stat-card"><div class="num" data-count="10">0</div><div class="lbl">Brands Taken Live</div></div>
+      <div class="stat-card"><div class="num" data-count="100">0</div><div class="lbl">% Strategy-First</div></div>
+    </div>
+    <p class="mono" style="text-align:center; margin-top:16px; font-size:11px; color:var(--ink-dim);">Placeholder stats — replace with your real numbers as you collect them.</p>
+  </section>
+
+  <!-- ================= PROBLEM / SOLUTION ================= -->
+  <section class="wrap fade-in">
+    <p class="eyebrow">The Real Cost</p>
+    <h2 class="section-title">Being unknown is costing you customers</h2>
+    <p class="section-lede">Every day your brand stays invisible, someone who needed exactly what you sell buys it from a competitor they'd actually heard of.</p>
+    <div class="ps-grid">
+      <div class="ps-card problem">
+        <h3>Where most brands get stuck</h3>
+        <ul class="ps-list">
+          <li><span class="mark">&times;</span>Posting whenever there's time, with no real plan behind it</li>
+          <li><span class="mark">&times;</span>Content that looks fine but doesn't sound like anyone</li>
+          <li><span class="mark">&times;</span>No idea what's actually working — or why</li>
+          <li><span class="mark">&times;</span>Followers who scroll past without ever becoming customers</li>
+        </ul>
+      </div>
+      <div class="ps-card solution">
+        <h3>What changes with Wiyasire</h3>
+        <ul class="ps-list">
+          <li><span class="mark">&check;</span>A content system built around your real audience, not guesswork</li>
+          <li><span class="mark">&check;</span>A voice people recognize before they even see your name</li>
+          <li><span class="mark">&check;</span>Content tracked against results, not just likes</li>
+          <li><span class="mark">&check;</span>Campaigns built to move people from watching to buying</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="wrap fade-in">
+    <p class="eyebrow">About</p>
+    <h2 class="section-title">About Wiyasire Marketing</h2>
+    <div class="about-grid">
+      <!-- IMAGE START — replace with: <img src="images/about.jpg" alt="Wiyasire Marketing founder"> -->
+      <div class="img-slot about-slot">
+        <div class="slot-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>
+          <span>Add about photo<br>images/about.jpg</span>
+        </div>
+      </div>
+      <!-- IMAGE END -->
+      <div class="about-copy">
+        <p>Every business starts unknown. Wiyasire Marketing exists to close that gap — turning brands nobody's heard of into brands people follow, talk about, and buy from.</p>
+        <p>We do this through content and social media marketing built on strategy first: understanding who your audience actually is, what makes them stop scrolling, and what earns enough trust to make them buy.</p>
+        <p>From content calendars to campaign copy to full social strategy, every piece of work carries one job — move your brand from unknown to known, and keep it there.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="wrap fade-in">
+    <p class="eyebrow">Control Panel</p>
+    <h2 class="section-title">Services</h2>
+    <ul class="panel-list">
+      <li><span class="switch" aria-hidden="true"></span><span class="p-name">Social Strategy</span><span class="p-desc">Content pillars, posting cadence, platform mix built around where your buyers actually are</span></li>
+      <li><span class="switch" aria-hidden="true"></span><span class="p-name">Content Creation</span><span class="p-desc">Captions, short-form scripts, carousel copy written to be read, not skipped</span></li>
+      <li><span class="switch" aria-hidden="true"></span><span class="p-name">Campaign Planning</span><span class="p-desc">Launches, promos, and seasonal pushes sequenced to build momentum, not noise</span></li>
+      <li><span class="switch" aria-hidden="true"></span><span class="p-name">Community & Voice</span><span class="p-desc">A brand tone people recognize, and a comment section that builds trust instead of ignoring it</span></li>
+    </ul>
+  </section>
+
+  <!-- ================= PORTFOLIO ================= -->
+  <section id="portfolio" class="wrap fade-in">
+    <p class="eyebrow">Portfolio</p>
+    <h2 class="section-title">Selected work</h2>
+    <p class="section-lede">A look at brands we've taken from unknown to known.</p>
+    <div class="channels" id="portfolio-grid">
+
+      <!-- CHANNEL START — copy this whole block to add a new project. Replace the img-slot div with: <img src="images/work-house-of-gigi.jpg" alt="House of GiGi project"> -->
+      <div class="channel">
+        <div class="img-slot channel-slot">
+          <div class="slot-label"><span>images/work-house-of-gigi.jpg</span></div>
+        </div>
+        <div class="channel-body">
+          <span class="ch-num mono">01 &mdash; ADS &amp; STRATEGY</span>
+          <h3>Turning TikTok scrolls into leads</h3>
+          <p>Built and ran a 30-day content strategy alongside targeted ad creative for House of GiGi, giving the brand a consistent presence and a lead-focused ad approach on TikTok.</p>
+          <div class="signal" data-bars="8,14,18,24,20,26"></div>
+          <span class="signal-label mono">MORE QUALIFIED LEADS FROM TIKTOK</span>
+        </div>
+      </div>
+      <!-- CHANNEL END -->
+
+      <!-- CHANNEL START — copy this whole block to add a new project. Replace the img-slot div with: <img src="images/work-lunge-tifeh.jpg" alt="Lunge by Tifeh project"> -->
+      <div class="channel">
+        <div class="img-slot channel-slot">
+          <div class="slot-label"><span>images/work-lunge-tifeh.jpg</span></div>
+        </div>
+        <div class="channel-body">
+          <span class="ch-num mono">02 &mdash; STRATEGY</span>
+          <h3>A content plan built to get seen</h3>
+          <p>Designed a 30-day content strategy for Lunge by Tifeh, giving the brand a clear posting rhythm and a plan to grow reach instead of waiting to be found.</p>
+          <div class="signal" data-bars="10,16,12,20,14,18"></div>
+          <span class="signal-label mono">INCREASE IN POSTING &amp; OUTREACH</span>
+        </div>
+      </div>
+      <!-- CHANNEL END -->
+
+      <!-- CHANNEL START — copy this whole block to add a new project. Replace the img-slot div with: <img src="images/work-tiara.jpg" alt="Tiara project"> -->
+      <div class="channel">
+        <div class="img-slot channel-slot">
+          <div class="slot-label"><span>images/work-tiara.jpg</span></div>
+        </div>
+        <div class="channel-body">
+          <span class="ch-num mono">03 &mdash; BRANDING, STRATEGY, ADS, DESIGN</span>
+          <h3>Building a brand from the ground up</h3>
+          <p>Full brand build for Tiara — logo, social media setup and placement, flyer design, a 30-day content strategy, and ad creative — taking the brand from concept to a real public presence.</p>
+          <div class="signal" data-bars="12,18,22,16,24,20"></div>
+          <span class="signal-label mono">FULL BRAND IDENTITY &amp; MARKET PRESENCE</span>
+        </div>
+      </div>
+      <!-- CHANNEL END -->
+
+      <!-- CHANNEL START — copy this whole block to add a new project. Replace the img-slot div with: <img src="images/work-aluu-shot-it.jpg" alt="Aluu Shot It project"> -->
+      <div class="channel">
+        <div class="img-slot channel-slot">
+          <div class="slot-label"><span>images/work-aluu-shot-it.jpg</span></div>
+        </div>
+        <div class="channel-body">
+          <span class="ch-num mono">04 &mdash; BRANDING, GRAPHIC DESIGN, VIDEO</span>
+          <h3>A brand built to convert, fast</h3>
+          <p>Complete branding package for Aluu Shot It — logo design, ad creative, video ads, and flyer design — built to turn a new brand into a lead-generating one from day one.</p>
+          <div class="signal" data-bars="16,22,26,20,24,28"></div>
+          <span class="signal-label mono">LEADS +80% IN 30 DAYS, +6% OVER NEXT 12</span>
+        </div>
+      </div>
+      <!-- CHANNEL END -->
+
+    </div>
+    <div class="note-box">HOW TO ADD A NEW PROJECT: copy one whole "CHANNEL START/END" block, paste it back into #portfolio-grid, then edit the image, number, title, description, and result text.</div>
+  </section>
+
+  <!-- ================= BOOKS ================= -->
+  <section id="books" class="wrap fade-in">
+    <p class="eyebrow">Books</p>
+    <h2 class="section-title">Books</h2>
+    <p class="section-lede">Alongside agency work, Wiyasire Marketing writes on marketing, brand-building, and content strategy — new titles publish here first.</p>
+    <div class="books" id="books-grid">
+
+      <!-- BOOK START — copy this whole block to add a new book. Replace the img-slot div with: <img src="images/book-1.jpg" alt="Book title"> -->
+      <div class="book">
+        <div class="img-slot book-slot">
+          <div class="slot-label"><span>images/book-1.jpg</span></div>
+        </div>
+        <div class="book-info">
+          <h3>Untitled Book Project</h3>
+          <p>Placeholder — replace with the real title, a one- or two-line description, and a link to where readers can get it.</p>
+          <span class="book-status mono">In progress</span>
+        </div>
+      </div>
+      <!-- BOOK END -->
+
+    </div>
+    <div class="note-box">HOW TO ADD A NEW BOOK: copy the whole "BOOK START/END" block, paste it back into #books-grid, then edit the cover image, title, description, and status.</div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="wrap fade-in">
+    <p class="eyebrow">Word On The Line</p>
+    <h2 class="section-title">What clients say</h2>
+    <div class="calls">
+      <div class="call">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="msg">Our page finally sounds like us. Wiyasire got the tone right in the first draft.</p>
+        <div class="call-who"><div class="avatar">PH</div><div><cite>Placeholder Name</cite><span class="role">Founder, Client Business</span></div></div>
+      </div>
+      <div class="call">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="msg">We went from posting when we remembered to actually having a plan.</p>
+        <div class="call-who"><div class="avatar">PH</div><div><cite>Placeholder Name</cite><span class="role">Founder, Client Business</span></div></div>
+      </div>
+      <div class="call">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="msg">People started recognizing our brand in the comments of other pages. That never happened before.</p>
+        <div class="call-who"><div class="avatar">PH</div><div><cite>Placeholder Name</cite><span class="role">Founder, Client Business</span></div></div>
+      </div>
+    </div>
+    <p class="mono" style="margin-top:20px; font-size:11px; color:var(--ink-dim);">Placeholder testimonials — swap in real client quotes and names once you have them.</p>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq" class="wrap fade-in">
+    <p class="eyebrow">Questions</p>
+    <h2 class="section-title">Before you reach out</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-q">How fast will I see results?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Most brands notice a shift in engagement within the first few weeks of a consistent strategy. Real momentum — followers turning into customers — usually builds over 60 to 90 days.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you just write content, or build the whole strategy?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Both. Every engagement starts with strategy — who you're talking to and why — before a single caption gets written. Content without strategy is just noise.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What if I don't have a big budget yet?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Tell us where you're starting from on the call. We'll be straight with you about what's realistic at your current stage — no package pushed on you that doesn't fit.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Which platforms do you work on?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Wherever your audience actually spends time — Instagram, TikTok, LinkedIn, X, and beyond. We build the platform mix around your buyers, not a one-size-fits-all list.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="wrap fade-in">
+    <div class="final-cta">
+      <h2>Ready to become the brand everyone's <span class="hl">talking about?</span></h2>
+      <p class="sub">Book a free strategy call and let's map out what taking your business from unknown to known actually looks like.</p>
+      <a class="btn btn-solid" href="#contact">Book A Free Strategy Call</a>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="wrap fade-in">
+    <p class="eyebrow">Contact</p>
+    <h2 class="section-title">Get in touch</h2>
+    <div class="contact-grid">
+      <!--
+        Posts to Formspree (free service for static-site form emails).
+        1. Create a free account at formspree.io
+        2. Create a new form, get your form ID
+        3. Replace YOUR_FORM_ID below with it
+      -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" required></div>
+        <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+        <button type="submit" class="btn btn-solid" style="justify-self:start;">Send Message</button>
+      </form>
+      <div class="contact-side">
+        <div class="item"><span class="k">Email</span><a href="mailto:hello@wiyasiremarketing.com">hello@wiyasiremarketing.com</a></div>
+        <div class="item"><span class="k">Instagram</span><a href="https://instagram.com/wiyasiremarketing" target="_blank" rel="noopener">@wiyasiremarketing</a></div>
+        <div class="item"><span class="k">Response time</span><span>Usually within 1–2 business days</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>WIYASIRE MARKETING &mdash; TAKING YOUR BUSINESS FROM UNKNOWN TO KNOWN</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <a href="#contact"><span class="tally" aria-hidden="true"></span>Book A Call</a>
+</div>
+
+<script>
+  const els = document.querySelectorAll('.fade-in');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  els.forEach(el=>io.observe(el));
+
+  document.querySelectorAll('.signal').forEach(sig=>{
+    sig.getAttribute('data-bars').split(',').forEach(h=>{
+      const bar = document.createElement('i'); bar.style.height = h + 'px'; sig.appendChild(bar);
+    });
+  });
+
+  // animated stat counters
+  const counters = document.querySelectorAll('.num[data-count]');
+  const counterIO = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        const el = entry.target;
+        const target = parseInt(el.getAttribute('data-count'),10);
+        const suffix = target >= 10 ? (target===100?'%':'x'.replace('x', target>=10&&target<100?'+':'x')) : 'x';
+        let cur = 0;
+        const step = Math.max(1, Math.round(target/40));
+        const tick = ()=>{
+          cur += step;
+          if(cur >= target){ cur = target; }
+          el.textContent = cur + (target===100?'%':(target>=10?'+':'x'));
+          if(cur < target){ requestAnimationFrame(tick); }
+        };
+        requestAnimationFrame(tick);
+        counterIO.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+  counters.forEach(c=>counterIO.observe(c));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    const q = item.querySelector('.faq-q');
+    const a = item.querySelector('.faq-a');
+    q.addEventListener('click', ()=>{
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o=>{
+        o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+    });
+  });
+
+  // sticky CTA visibility
+  const stickyCta = document.getElementById('stickyCta');
+  const contactSection = document.getElementById('contact');
+  window.addEventListener('scroll', ()=>{
+    const showAfter = window.innerHeight * 0.8;
+    const contactTop = contactSection.getBoundingClientRect().top + window.scrollY;
+    const nearContact = window.scrollY + window.innerHeight > contactTop;
+    if(window.scrollY > showAfter && !nearContact){ stickyCta.classList.add('show'); }
+    else{ stickyCta.classList.remove('show'); }
+  });
+</script>
+
+</body>
+</html>
